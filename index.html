@@ -6,7 +6,171 @@
     <title>Welcome</title>
 </head>
 <body>
-    <h3>반갑습니다.</h3>
-    <p>저는 김기철입니다.</p>
+	<ul id "menu">
+		<li>
+			<a href=''>특징</a>
+		</li>
+		<li>
+			<a href='' target='_blank'>효능</a>
+		</li>
+		<li>
+			<a href='' target='_blank'>주문하기</a>
+		</li>
+    <li><a href='' target='_blank'>상품정보</a></li>
+</ul>
+<hr>
+<h1>방울토마토</h1>
+<figure>
+    <img src="tomato" width="640" height="426"    
+    <figcaption><br>
+        생산된 방울 토마토</figcaption>
+</figure>
+<hr>
+<h1>특징</h1>
+<li>달고 진함</li>
+<li>크기가 작고 귀여워서 아이들도 좋아함</li>
+<li>건강한 성분이 많이 함유됨</li>
+<li>다양한 요리나 음료에 사용 가능</li>
+<br>
+<a href="https://www.10000recipe.com/recipe/6840905">방울 토마토 요리방법 보기
+</a>
+<br>
+<br>
+    <hr>
+<h1>효능</h1>
+<li><mark>항산화 작용</mark>으로 노화 방지에 좋다.</li>
+<li>
+    <mark>칼륨 함량</mark>이 높아서 혈압 조절에 좋다.</li>
+<li><mark>비타민 C 함량</mark>이 높아서 면역력 향상에 좋다.</li>
+<li><mark>체내 독소 제거와 간 기능 개선</mark>에도 효과가 있다.</li>
+</a>
+<br>
+
+<hr>
+
+<h1>주문하기</h1>
+방울 토마토는 <strong> <u>3kg에 2만원</u></strong>입니다. 주문하시려면 아래 링크를 클릭해주세요.
+<table border="1">
+	<td>주문하기</td>
+    </tr>
+</table>
+<br>
+<hr>
+<br>
+<h1>상품정보</h1>
+<table border="1">
+    <thead>
+        <tr>
+<th>주문하기</th>
+    <td>12345</td>
+</th>
+</tr>
+</thead>
+<tbody>
+    <tr>
+<th>상품상태</th>
+<td>신선</td>
+</tr>
+<tbody>
+    <th>원산지</th>
+<td>한국</td>
+<tr>
+<th>품종</th>
+<td>방울 토마토</td>
+</tr>
+<tr>
+    <th>수확시기</th>
+<td>하절기</td>
+</tr>
+</tbody>
+    </table>
+    <body>
+        <img src="tomato_1">    
+    </body>
+    <br>
+    <hr>
+    <br>
+<a> Top으로 이동
+</a>
+<br>	
+
+<h1>상품 주문서</h1>
+		<form>
+			<fieldset>
+				<legend>개인 정보</legend>
+				<ul>
+					<li>
+						<label for="uname" class="title">주문자 이름</label>
+						<input type="text" id="uname" placeholder="" required>
+					</li>
+					<li>
+						<label for="tel1" class="title">전화번호</label>
+						<input type="tel" id="tel1" placeholder="번호만 입력">
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>배송지 정보</legend>
+				<ul>
+					<li>
+						<label for="tranopt" class="title">배송 옵션 :</label>
+						<input type="radio" id="p-addr" name="drone" value="기존 배송지" checked/>
+						<lable for="p-addr">기존 배송지</label>
+						<input type="radio" id="n-addr" name="drone" value="새 배송지" checked/>
+						<lable for="n-addr">새 배송지</label>
+					</li>
+					<li>
+						<label for="addr" class="title">주소</label>
+						<input type="text" size="40" id="addr" required>
+					</li>
+					<li>
+						<label for="req-select" class="title">요청사항</label>
+						<select name="req" id="req-select">
+						  <option value="" disabled selected>요청사항을 선택하세요</option>
+						</select>
+					</li>			
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>주문 정보</legend>
+				<ul>
+					상품
+					<br>
+						<label><input type="checkbox">방울토마토1kg 10,000원8,000원 </label>
+						<label><input type="number" value="0" min="0" max="5">박스 </label>
+					<br>
+						<label><input type="checkbox">방울토마토2kg 20,000원16,000원 </label>
+						<label><input type="number" value="0" min="0" max="5">박스 </label>					
+					<br>
+						<label><input type="checkbox">방울토마토3kg 30,000원24,000원 </label>
+						<label><input type="number" value="0" min="0" max="5">박스 </label>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>결제 수단</legend>
+				<ul>
+					<li>
+						<label for="payopt" class="title"></label>
+						<input type="radio" id="pay-tran" name="drone" value="계좌 이체" checked/>
+						<lable for="pay-tran">계좌 이체</label>
+					</li>
+					<li>
+						<input type="radio" id="pay-card" name="drone" value="카드 이체">
+						<lable for="pay-card">카드 이체</label>
+					</li>
+					<li>
+						<input type="radio" id="pay-normal" name="drone" value="일반 결제">
+						<lable for="pay-normal">일반 결제</label>
+					</li>					
+				</ul>
+			</fieldset>
+			<div class="centered">
+			    <br>
+				<input type="submit" value="초기화">
+				<input type="reset" value="결제하기">
+			</div>
+		</form>
+	</div>
+
 </body>
 </html>
